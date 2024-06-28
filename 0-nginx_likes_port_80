@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Nginx must be running, and listening on port 80 of all the server’s active 
+# This script configures Nginx to listen on port 80
 
 echo "server { listen 80; }" | sudo tee /etc/nginx/sites-available/default > /dev/null
 
