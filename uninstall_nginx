@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+sudo apt-get update
+sudo systemctl stop nginx
+sudo apt-get purge nginx nginx-common nginx-full nginx-core
+sudo rm -rf /etc/nginx
+sudo rm -rf /var/log/nginx
+sudo apt-get autoremove
+dpkg --list | grep nginx | sed 'd
